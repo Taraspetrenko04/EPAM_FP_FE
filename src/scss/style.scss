@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+
+.block{
+    width: 1200px;
+    margin: 0 auto;
+    @include flex-center;
+    
+
+    &__text{
+        display: flex;
+        color: $text-color;
+        font-weight: 400;
+        border: 2px solid black;
+        background-color: yellow;
+    }
+}
