@@ -1,18 +1,14 @@
+// Import variables
 @import "variables";
+
+// Import Mixins
 @import "mixins";
 
+// Import styles
 
-.block{
-    width: 1200px;
-    margin: 0 auto;
-    @include flex-center;
-    
+@import "./320px/header_320";
+@import "./640px/header_640";
+@import "./960px/header_960";
+@import "./1200px/header_1200";
 
-    &__text{
-        display: flex;
-        color: $text-color;
-        font-weight: 400;
-        border: 2px solid black;
-        background-color: yellow;
-    }
-}
+
