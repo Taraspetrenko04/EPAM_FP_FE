@@ -11,3 +11,7 @@
     justify-content: space-between;
     
 }
+
+@mixin overflow-scroll {
+    overflow: auto;
+}

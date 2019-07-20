@@ -8,6 +8,9 @@
         display: flex;
 
     }
+    .drop__items{
+        display: none;
+    }
 
     .hide {
         display: none;
@@ -23,6 +26,7 @@
 
     .container {
         width: 90%;
+        @include flex-between;
         // padding-right: 15px;
         // padding-left: 15px;
         margin-right: auto;
@@ -32,8 +36,8 @@
 
     .slogan {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 36px;
-        display: inline-block;
+        font-size: 2em;
+        display: flex;
         color: $text-color;
     }
 
@@ -47,7 +51,7 @@
         border: 1px solid #ffff;
         border-radius: 3px;
         color: $text-color;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     // NAVBAR
@@ -72,18 +76,30 @@
         display: flex;
         flex-direction: column;
         background-color: $background-color;
-        width: 80%;
+        width: 100%;
         position: fixed;
         left: -100%;
         top: 82px;
         transition: all 600ms;
+        @include overflow-scroll;
+        height: 180px;
 
-
-        &__link {
-            border-bottom: 1px solid grey;
-            box-sizing: border-box;
-            padding-left: 15px;
+        &__cars{
+            border-top: 2px dashed grey;
         }
+        &__item {
+            border-top: 1px solid grey;
+            box-sizing: border-box;
+            padding: 10px 25px 10px 25px ;
+        }
+        &__link{
+            color: $text-color;
+        }
+
+    }
+
+    .menu__item:hover{
+        background-color: rgb(109, 136, 136);
     }
 
     .menu__active {
@@ -95,21 +111,130 @@
 }
 
 @media (min-width:640px) and (max-width: 959px) {
-    .header {
-        background-color: violet;
-    }
+    
+        .navbar {
+            width: 100%;
+        }
+        .menu {
+            width: 100%;
+        }
+
+        .menu__link{
+            font-size: 1.05em;
+        }
+
+    
 }
 
 @media (min-width:960px) and (max-width: 1199px) {
-    .header {
-        background-color: purple;
-    }
+        .container {
+            display: flex;
+            vertical-align: baseline;
+        }
+
+        .slogan {
+            font-size: 2.5em;
+        }
+
+        .menu {
+            width: 60%;
+        }
+        .menu__link{
+            font-size: 1.2em;
+        }
+    
 }
 
 @media (min-width:1200px) {
-    .header {
-
-
-        background-color: fuchsia;
+   .navbar{
+       height: auto;
+   }
+    .container {
+        width: 1200px;
     }
+    
+    .navbar__container {
+       padding: 40px 0 20px 0;
+       @include  flex-between;
+    }
+    .navbar__button{
+        display: none;
+    }
+    
+    .slogan {
+        font-size: 3em;
+        display: inline-block;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        overflow: visible;
+    }
+    .menu__items{
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+    .menu__item{
+        font-size: 1.3em;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 20px 20px 20xp 20px;
+        margin-left: 23px;
+        display: flex;
+    }
+
+    .menu__cars{
+        display: flex;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto; 
+        flex-direction: column;
+        border: none;
+        position: fixed;
+        width: 300px;
+        top: 156px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    .menu__car{
+        background-color: $background-color;
+        margin: 0;
+    }
+    .drop__items{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3em;
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin-left: 20px;
+        @include flex-between;
+        width: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .drop__items:hover{
+        background-color: rgb(109, 136, 136);
+    }
+
+    .drop__link{
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .drop__img{
+        transform: rotate(-90deg);
+        display: flex;
+        width: 46px;
+        height: 46px;
+        background-color: rgb(109, 136, 136);
+        @include flex-center;
+    }
+    .img__features{
+        display: flex;
+        object-fit: cover;
+    }
+
 }
