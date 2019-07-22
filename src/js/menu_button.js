@@ -1,3 +1,4 @@
+'use sctrict';
 
 let btn = document.getElementsByClassName('navbar__button')[0];
 let burger =  document.getElementsByClassName('navbar__burger')[0];
