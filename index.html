@@ -1,71 +1,114 @@
  <!DOCTYPE html>
-<html lang="en">
+ <body lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Project EPAM Petrenko Taras</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/libraries/css/all.css">
-    <!-- <link rel="stylesheet" href="src/libraries/css/fontawesome.css"> -->
-</head>
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Final Project EPAM Petrenko Taras</title>
+     <link rel="stylesheet" href="src/css/reset.css">
+     <link rel="stylesheet" href="src/css/style.css">
+     <link rel="stylesheet" href="src/libraries/css/all.css">
+     <!-- <link rel="stylesheet" href="src/libraries/css/fontawesome.css"> -->
+ </head>
 
-<body>
-    <!-- Header -->
-    <header class="header">
-        <!-- Navbar -->
-        <nav class="navbar navbar-color">
-            <div class="container navbar__container">
+ <body>
+     <!-- Header -->
+     <header class="header">
+         <!-- Navbar -->
+         <nav class="navbar navbar-color">
+             <div class="container navbar__container">
 
-                <a href="#" class="slogan navbar__sloan">VENTE</a>
-                <div class="button navbar__button">
-                    <div class="navbar__burger active"> <i class="fas fa-bars"></i></div>
-                    <div class="navbar__cross hide"><i class="fas fa-times"></i></div>
-                </div>
-                
+                 <a href="#" class="slogan navbar__sloan">VENTE</a>
+                 <div class="button navbar__button">
+                     <div class="navbar__burger active"> <i class="fas fa-bars"></i></div>
+                     <div class="navbar__cross hide"><i class="fas fa-times"></i></div>
+                 </div>
+
 
                  <!-- Menu -->
-        <div class="menu menu-active">
-            <ul class="menu__items">
-                <li class="menu__item "><a href="" class=" menu__link menu__categories ">Категории</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Вход</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Регистрация</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                <li class="menu__item"><a href="https://ru-ru.facebook.com/EPAM.Ukraine/" class="menu__link">Соцсети</a></li>
-            </ul>
+                 <div class="menu menu-active">
+                     <ul class="menu__items">
+                         <li class="menu__item "><a href="" class=" menu__link menu__categories ">Категории</a></li>
+                         <li class="menu__item"><a href="" class="menu__link">Вход</a></li>
+                         <li class="menu__item"><a href="" class="menu__link">Регистрация</a></li>
+                         <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                         <li class="menu__item"><a href="https://ru-ru.facebook.com/EPAM.Ukraine/"
+                                 class="menu__link">Соцсети</a></li>
+                     </ul>
 
-            <ul class="menu__cars">
-                <li class="menu__item menu__car"><a href="" class="menu__link">Авто отечественные</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Авто зарубежные</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Почти новые</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Битые</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Евро Номер</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Нулевой пробег</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Ретро</a></li>
-            </ul>
-        </div>
-       
+                     <ul class="menu__cars">
+                         <li class="menu__item menu__car"><a href="" class="menu__link">Отечественные Авто</a></li>
+                         <li class="menu__item menu__car"><a href="" class="menu__link">Зарубежные Авто</a></li>
+                         <li class="menu__item menu__car"><a href="" class="menu__link">Почти Новые</a></li>
+                         <li class="menu__item menu__car"><a href="" class="menu__link">Битые</a></li>
+                         <li class="menu__item menu__car"><a href="" class="menu__link">Евро Номер</a></li>
+                         <li class="menu__item menu__car"><a href="" class="menu__link">Ретро</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+
+     </header>
+
+
+     <!-- Slider -->
+     <section class="slider">
+         <div class="slider__container">
+            <!-- Arrow Left-->
+            <div class="slider__arrow left"><i class="fas fa-arrow-circle-left"></i></div>
+
+            <div class="slider__items">
+                <!-- content -->
+                <a class="slider__item  native" href="">
+                    <div class="slider__name"><p>Отечественные Авто</p></div>
+                    <div class="slider__img slider__native"></div>
+                </a>
+
+                <a class="slider__item foreign slider__hide" href="">
+                        <div class="slider__name"><p>Зарубежные Авто</p></div>
+                        <div class="slider__img slider__foreign"></div>
+                    </a>
+
+                    <a class="slider__item almostNew slider__hide" href="">
+                        <div class="slider__name"><p>Почти Новые</p></div>
+                        <div class="slider__img slider__almostNew"></div>
+                    </a>
+
+                    <a class="slider__item crashed slider__hide" href="">
+                        <div class="slider__name"><p>Битые</p></div> 
+                        <div class="slider__img slider__crashed"></div>
+                    </a>
+
+                    <a class="slider__item euro slider__hide" href="">
+                        <div class="slider__name"><p>Евро Номер</p></div>
+                        <div class="slider__img slider__euro"></div>
+                    </a>
+
+                    <a class="slider__item retro slider__hide" href="">
+                        <div class="slider__name"><p>Ретро</p></div>
+                        <div class="slider__img slider__retro"></div>
+                    </a>
 
             </div>
-            <!-- menu drop
-            <div class="drop__items">
-                    <a href=""  class="drop__link">Категории</a>
-                    <div class="drop__img"><img class="img__features" src="./src/img/Arrow.png" alt=""></div>
-                </div> -->
-        </nav>
-        
-    </header>
-    <!-- Section -->
-    <section class="auction-content"></section>
+            <!-- Arrow Right -->
+            <div class="slider__arrow right"><i class="fas fa-arrow-circle-right"></i></div>
 
-    <!-- Footer -->
-    <footer class="footer"></footer>
+        </div>
+     </section>
 
 
-<!-- SCRIPTS -->
-    <script src="./src/js/menu_button.js"></script>
-    <script src="./src/js/menu_drop.js"></script>
-</body>
-</html>
+     <!-- Content -->
+     <section class="auction-content"></section>
+
+     <!-- Footer --> 
+     <footer class="footer"></footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="./src/js/menu_button.js"></script>
+     <!-- <script src="./src/js/menu_drop.js"></script> -->
+      <script src="./src/js/slider.js"></script>
+ </body>
+
+ </body>

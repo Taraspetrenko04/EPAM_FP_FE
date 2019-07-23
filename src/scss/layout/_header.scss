@@ -208,7 +208,7 @@
     }
 
     .menu__cars{
-        display: none;
+        display: flex;
         margin-left: auto;
         margin-right: auto; 
         flex-direction: column;
@@ -217,62 +217,10 @@
         box-sizing: border-box;
         transition: all 800ms ease;
     }
-    .menu:hover > .menu__cars{
-        display: flex;
-    }
-
-
-    // .menu__categories:hover .menu__cars{
-    //    background-color: red;
-    // }
-
-
-    // Active
-    // .menu__cars--active{
-    //     top: 129px;
-    //     z-index: 900;
-    // }
-
-    
-    // .drop__items{
+    // .menu:hover > .menu__cars{
     //     display: flex;
-    //     flex-direction: row;
-    //     font-size: 1.3em;
-    //     border: 1px solid gray;
-    //     border-radius: 5px;
-    //     margin-left: 20px;
-    //     @include flex-between;
-    //     width: 300px;
-    //     overflow: hidden;
-    //     margin: 0 auto;
-    // }
-    // .drop__items:hover{
-    //     background-color: rgb(109, 136, 136);
     // }
 
-    // .drop__link{
-    //     padding: 10px;
-    // }
 
-    // .drop__img{
-    //     transform: rotate(-90deg);
-    //     display: flex;
-    //     width: 40px;
-    //     height: 40px;
-    //     background-color: darkturquoise;
-    //     @include flex-center;
-    //     transition: all 800ms;
-    //     border-radius: 5px;
-    // }
-    //  // Active
-    //  .drop__img--active{
-    //     transform: rotate(90deg);
-    //     background-color: rgb(177, 219, 79);
-    //  }
-
-    // .img__features{
-    //     display: flex;
-    //     object-fit: cover;
-    // }
-
+  
 }
