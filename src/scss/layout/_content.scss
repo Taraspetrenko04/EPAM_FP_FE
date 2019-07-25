@@ -1,0 +1,184 @@
+
+// W240PX
+@media all and (min-width: 240px) {
+    .content{
+           margin-top: 20px;
+            
+
+        &__container{
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__title{
+            background-color:  $background-color;
+            color: $text-color;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+           
+        }
+
+        &__filter{
+
+        }
+
+        &__store{
+           display: flex;
+           flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        &__item{
+            display: block;
+            padding: 15px 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 300px;
+            margin: 10px 15px;
+            max-width: 270px;
+            box-sizing: border-box;
+    
+        }
+        &__img{
+            @include flex-center;
+            height: 60%;
+            border: 3px solid $border-color;
+            border-radius: 10px;
+            box-sizing: border-box; 
+            width: 100%;
+            overflow: hidden;
+        }
+         
+        
+        
+
+        &__description{
+            height:20%;
+            background-color: $background-color;
+            @include flex-left;
+            color: $text-color;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid $border-color;
+            box-sizing: border-box; 
+
+        }
+    } 
+     
+    .img-container{
+        @include flex-center;
+        height: 60%;
+        border: 3px solid $border-color;
+        border-radius: 10px;
+        box-sizing: border-box; 
+        width: 100%;
+        overflow: hidden;
+    }
+    .img-features{
+        display: block;
+        width: 100%;
+        height: fill;
+    }
+    // &__img{
+        //     width: 100%;
+        //     height:60%;
+        //     background: url("../img/native_3.jpg") no-repeat;
+        //     background-size: cover;
+        //     background-position: center;
+        //     border: 3px solid $border-color;
+        //     border-radius: 10px;
+        //     box-sizing: border-box;
+        //} 
+
+}
+// W640PX
+
+@media (min-width: 640px) and (max-width: 959px) {
+    .content{
+        &__container{
+            width: 95%;
+        }
+
+        &__filter{
+
+        }
+
+        &__store{
+
+        }
+
+        &__item{
+            
+        }
+
+        &__item{
+          
+    
+        }
+    
+    }
+
+    }
+
+// W960PX
+  @media (min-width: 960px) and (max-width: 1199px) {
+    .content{
+        &__container{
+        }
+
+        &__filter{
+
+        }
+
+        &__store{
+
+        }
+
+        &__item{
+            height: 330px;
+            margin: 10px 15px;
+            max-width: 300px; 
+        }
+
+        &__item{
+          
+    
+        }
+    
+    }
+   
+  }
+  // W1200PX
+  @media (min-width: 1200px) {
+    .content{
+        &__container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        &__filter{
+
+        }
+
+        &__store{
+           justify-content: space-around;
+
+        }
+
+        &__item{
+            height: 330px;
+            max-width: 300px;
+            margin: 20px 20px;
+        }
+    
+    }
+   
+
+  }
