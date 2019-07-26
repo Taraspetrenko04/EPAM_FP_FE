@@ -213,7 +213,10 @@
         margin-right: auto; 
         flex-direction: column;
         border: none;
-        position: relative;
+        position: absolute;
+        top: 83px;
+        left:50%;
+        margin-left: -50px;
         box-sizing: border-box;
         transition: all 800ms ease;
     }

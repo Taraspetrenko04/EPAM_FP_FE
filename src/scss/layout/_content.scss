@@ -25,6 +25,11 @@
         }
 
         &__filter{
+            display: none;
+            width: 300px;
+            height: 660px;
+            
+            
 
         }
 
@@ -32,13 +37,15 @@
            display: flex;
            flex-wrap: wrap;
             justify-content: center;
+            height: 660px;
+            overflow: auto;
 
         }
 
         &__item{
             display: block;
             padding: 15px 15px;
-            border: 1px solid black;
+            border: 1px solid $border-color;
             border-radius: 10px;
             height: 300px;
             margin: 10px 15px;
@@ -46,6 +53,16 @@
             box-sizing: border-box;
     
         }
+        &__item:hover{
+            border: 1px solid orange;
+            box-shadow: 10px 10px 10px rgba(235, 127, 77, 0.801);
+        }
+        &__item--hide{
+            display: none;
+        }
+    
+
+
         &__img{
             @include flex-center;
             height: 60%;
@@ -161,24 +178,76 @@
         &__container{
             width: 1200px;
             margin: 0 auto;
+            
+
         }
 
         &__filter{
+            display: flex;
+            width: 240px;
+            height: auto;
+            border: 1px solid $border-color;
+            box-sizing: border-box;
+            border-radius: 10px;
+            float: left;
+            overflow: hidden;
+
 
         }
 
         &__store{
            justify-content: space-around;
+           height: 730px;
 
         }
 
         &__item{
             height: 330px;
             max-width: 300px;
-            margin: 20px 20px;
+            margin: 20px 0px;
         }
+       
     
     }
-   
+    .content__filter{
+        margin-top:20px;
+    }
+    .filter__item{
+        display: inline-block;
+        width: 100%;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .filter__store .filter__item:first-child{
+        color: #ffff;
+        background-color: rgb(190, 91, 34);
+        padding: 10px;
+        font-weight: 700;
+
+    }
+    .filter__store .filter__item:not(:first-child){
+        color: $text-color;
+        background-color: $background-color;
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+    .filter__store .filter__item:not(:first-child):hover{
+        background-color: #6d8888;
+        border-left: 5px solid  #18cfab;
+        box-sizing: border-box;
+        
+    }
+    
+    .filter__item--active{
+        background-color: #87c4c4;
+        border-left: 1px solid  #18cfab;
+        box-sizing: border-box;
+        color: #e43617;
+        z-index: 1000;
+    }
+    
+        
+    
 
   }
