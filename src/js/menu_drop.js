@@ -1,8 +1,30 @@
-// 'use sctrict';
+'use sctrict';
+// take thr drop menu
+let menuDrop = document.getElementsByClassName('menu__cars')[0];
 
-// let menuDrop = document.getElementsByClassName('menu__cars')[0];
-// // menuDrop.style.top = 200 + 'px';
-// let menuArrow = document.getElementsByClassName('drop__img')[0];
+// take the category 
+let menuCat = document.getElementsByClassName('menu__categories')[0];
+// add mouseover/out in categoty and dropMenu
+menuCat.addEventListener('mouseover', showSub, false);
+menuCat.addEventListener('mouseout', hideSub, false);
+menuDrop.addEventListener('mouseover', showSub, false);
+menuDrop.addEventListener('mouseout', hideSub, false);
+function showSub(event){
+    menuDrop.classList.remove('menu__cars--hide');
+}
+function hideSub(event){
+        menuDrop.classList.add('menu__cars--hide');
+    
+}
+
+
+    // let target = event.target;
+    // menuDrop.classList.remove('menu__cars--hide');
+// function addHide (){
+//     if (target.className != 'menu__cars'){
+//         menuDrop.classList.add('hide');
+//     }
+// }
 // // menuArrow.style.transform = 'rotate(' + 90 + 'deg)';
 // document.onmouseover = function(event){
 //     let target = event.target;

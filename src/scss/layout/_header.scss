@@ -214,15 +214,19 @@
         flex-direction: column;
         border: none;
         position: absolute;
-        top: 83px;
+        top: 61px;
         left:50%;
         margin-left: -50px;
         box-sizing: border-box;
         transition: all 800ms ease;
+        opacity: 1;
     }
-    // .menu:hover > .menu__cars{
-    //     display: flex;
-    // }
+    .menu__cars--hide {
+        opacity: 0;
+        transition: all 800ms ease;
+        top: -300px;
+        
+    }
 
 
   

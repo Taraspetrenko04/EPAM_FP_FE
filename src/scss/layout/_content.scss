@@ -223,6 +223,7 @@
         background-color: rgb(190, 91, 34);
         padding: 10px;
         font-weight: 700;
+        cursor: pointer;
 
     }
     .filter__store .filter__item:not(:first-child){
@@ -240,11 +241,10 @@
     }
     
     .filter__item--active{
-        background-color: #87c4c4;
-        border-left: 1px solid  #18cfab;
+        background-color: #87c4c4 !important;
+        border-left: 1px solid  #18cfab !important;
         box-sizing: border-box;
         color: #e43617;
-        z-index: 1000;
     }
     
         
