@@ -1,0 +1,76 @@
+// @media all and (min-width : 240px) {}
+// @media (min-width:640px) and (max-width: 959px) {}
+// @media (min-width:960px) and (max-width: 1199px) {}
+// @media (min-width:1200px) {}
+
+@media all and (min-width : 240px) {
+    .registration{
+        padding-top: 90px;
+
+        &__container{
+            width: 90%;
+            margin: 0 auto;
+            
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title{
+            color: $text-color;
+            padding-top:10px;
+            padding-bottom: 10px;
+            background-color: rgb(189, 174, 174);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+
+        &__text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            padding-top:10px;
+            display: inline-block;
+        }
+        &__text--hide{
+            display: none;
+        }
+        &__input{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            padding-top:10px;
+            padding-bottom: 10px;
+            display: inline-block;
+            width: 70%;
+        }
+        &__button{
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            font-size: 1em;
+
+
+        }
+        
+    }
+    .text-red{
+        color: rgb(233, 47, 47);
+        font-weight: 700;
+    }
+    
+}
+@media (min-width:640px) and (max-width: 959px) {}
+@media (min-width:960px) and (max-width: 1199px) {}
+@media (min-width:1200px) {
+    .registration{
+        &__container{
+            width: 1200px;
+        }
+    }
+}

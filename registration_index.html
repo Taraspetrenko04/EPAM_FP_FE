@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/libraries/css/all.css">
+</head>
+<body>
+     <!-- Header -->
+     <header class="header">
+            <!-- Navbar -->
+            <nav class="navbar navbar-color">
+                <div class="container navbar__container">
+
+                    <a href="index.html" class="slogan navbar__sloan">VENTE</a>
+                    <div class="button navbar__button">
+                        <div class="navbar__burger active"> <i class="fas fa-bars"></i></div>
+                        <div class="navbar__cross hide"><i class="fas fa-times"></i></div>
+                    </div>
+
+
+                    <!-- Menu -->
+                    <div class="menu menu-active">
+                        <ul class="menu__items">
+                            <li class="menu__item "><a href="" class=" menu__link menu__categories ">Категории</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Вход</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Регистрация</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                            <li class="menu__item"><a href="https://ru-ru.facebook.com/EPAM.Ukraine/"
+                                    class="menu__link">Соцсети</a></li>
+                        </ul>
+
+                        <ul class="menu__cars menu__cars--hide">
+                            <li class="menu__item menu__car"><a href="" class="menu__link">Отечественные Авто</a></li>
+                            <li class="menu__item menu__car"><a href="" class="menu__link">Зарубежные Авто</a></li>
+                            <li class="menu__item menu__car"><a href="" class="menu__link">Почти Новые</a></li>
+                            <li class="menu__item menu__car"><a href="" class="menu__link">Битые</a></li>
+                            <li class="menu__item menu__car"><a href="" class="menu__link">Евро Номер</a></li>
+                            <li class="menu__item menu__car"><a href="" class="menu__link">Ретро</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+    <!-- Registration -->
+
+    <section class="registration">
+        <div class="registration__container">
+        <form action="index.html" class="registration__form">
+            <p class="registration__title">Registration</p>
+            <p class="registration__text text-red registration__text--hide">E-mail already Exist!</p>
+            <p class="registration__text">Enter your E-Mail</p>
+            <input class="registration__input registration__mail" for="" type="email" name="email" placeholder="Email Adress" value="Taraspetrenko04@ukr.net" required>
+            <p class="registration__text">Enter your Password</p>
+            <input class="registration__input registration__password" for="password" type="text" name="number" placeholder="Password"  value="12345" required>
+            <!-- <p class="registration__text">Enter your Password again</p>
+            <input class="registration__input registration__password" for="password" type="text" name="number" placeholder="Password" required> -->
+            <button class="registration__button"  type="submit">Create an accaunt</button>
+        </form>
+        </div>
+    </section>
+     <!-- Footer
+     <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__text"> &#169 Copyrighted by Taras PETRENKO</p>
+                <p class="footer__text"><span class="text__bold">&ltEPAM&gt</span> 2019</p>
+            </div>
+        </footer> -->
+
+
+        <!-- SCRIPTS -->
+        <!-- <script src="./src/js/menu_button.js"></script> -->
+         <!-- <script src="./src/js/menu_drop.js"></script> -->
+         <!-- <script src="./src/js/slider.js"></script> -->
+         <!-- <script src="./src/js/filter.js"></script> -->
+         <script src="./src/js/registration.js"></script>
+    
+</body>
+</html>
