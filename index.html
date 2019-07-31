@@ -30,12 +30,12 @@
                      <!-- Menu -->
                      <div class="menu menu-active">
                          <ul class="menu__items">
+                             <li class="menu__item hide"><a href="" class="menu__link">Add a lot +</a></li>
                              <li class="menu__item "><a href="" class=" menu__link menu__categories ">Категории</a></li>
-                             <li class="menu__item"><a href="" class="menu__link">Вход</a></li>
+                             <li class="menu__item log-in"><a href="" class="menu__link">Вход</a></li>
                              <li class="menu__item"><a href="registration_index.html" class="menu__link">Регистрация</a></li>
                              <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                             <li class="menu__item"><a href="https://ru-ru.facebook.com/EPAM.Ukraine/"
-                                     class="menu__link">Соцсети</a></li>
+                             <li class="menu__item"><a href="" class="menu__link">Соцсети</a></li>
                          </ul>
 
                          <ul class="menu__cars menu__cars--hide">
@@ -49,6 +49,21 @@
                      </div>
                  </div>
              </nav>
+    <!-- Modal Window Sing in -->
+             <div class="modal hide">
+                 <div class="modal__window">
+                        <form action="index.html" class="modal__form">
+                                <div class="modal__cross"><i class="fas fa-times"></i></div>
+                                <p class="registration__title">Log IN</p>
+                                <p class="modal__text">Enter your E-Mail</p>
+                                <input class="modal__input log__mail" for="" type="email" name="email" placeholder="Email Adress" value="Taraspetrenko04@ukr.net" required>
+                                <p class="modal__text">Enter your Password</p>
+                                <input class="modal__input log__password" for="password" type="text" name="number" placeholder="Password"  value="12345" required>
+                                <button class="modal__button"  type="submit">Log In</button>
+                            </form>
+
+                 </div>
+             </div>
 
          </header>
 
@@ -268,7 +283,7 @@
          <footer class="footer">
              <div class="footer__container">
                  <p class="footer__text"> &#169 Copyrighted by Taras PETRENKO</p>
-                 <p class="footer__text"><span class="text__bold">&ltEPAM&gt</span> 2019</p>
+                 <p class="footer__text"><span class="text__bold">&ltIT Service&gt</span> 2019</p>
              </div>
          </footer>
 
@@ -278,6 +293,7 @@
          <script src="./src/js/menu_drop.js"></script>
          <script src="./src/js/slider.js"></script>
          <script src="./src/js/filter.js"></script>
+         <script src="./src/js/logIn.js"></script>
      </body>
 
  </body>

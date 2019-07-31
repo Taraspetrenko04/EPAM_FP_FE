@@ -36,6 +36,9 @@
             padding-top:10px;
             display: inline-block;
         }
+        &__text--hide{
+            display: none;
+        }
         &__input{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
@@ -56,8 +59,18 @@
         }
         
     }
+    .text-red{
+        color: rgb(233, 47, 47);
+        font-weight: 700;
+    }
     
 }
 @media (min-width:640px) and (max-width: 959px) {}
 @media (min-width:960px) and (max-width: 1199px) {}
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+    .registration{
+        &__container{
+            width: 1200px;
+        }
+    }
+}
