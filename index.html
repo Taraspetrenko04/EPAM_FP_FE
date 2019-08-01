@@ -1,78 +1,4 @@
  <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Project EPAM Petrenko Taras</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/libraries/css/all.css">
-    <!-- <link rel="stylesheet" href="src/libraries/css/fontawesome.css"> -->
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="header">
-        <!-- Navbar -->
-        <nav class="navbar navbar-color">
-            <div class="container navbar__container">
-
-                <a href="#" class="slogan navbar__sloan">VENTE</a>
-                <div class="button navbar__button">
-                    <div class="navbar__burger active"> <i class="fas fa-bars"></i></div>
-                    <div class="navbar__cross hide"><i class="fas fa-times"></i></div>
-                </div>
-                
-
-                 <!-- Menu -->
-        <div class="menu menu-active">
-            <ul class="menu__items">
-                <li class="menu__item "><a href="" class=" menu__link menu__categories ">Категории</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Вход</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Регистрация</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                <li class="menu__item"><a href="https://ru-ru.facebook.com/EPAM.Ukraine/" class="menu__link">Соцсети</a></li>
-            </ul>
-
-            <ul class="menu__cars">
-                <li class="menu__item menu__car"><a href="" class="menu__link">Авто отечественные</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Авто зарубежные</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Почти новые</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Битые</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Евро Номер</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Нулевой пробег</a></li>
-                <li class="menu__item menu__car"><a href="" class="menu__link">Ретро</a></li>
-            </ul>
-        </div>
-       
-
-            </div>
-            <!-- menu drop
-            <div class="drop__items">
-                    <a href=""  class="drop__link">Категории</a>
-                    <div class="drop__img"><img class="img__features" src="./src/img/Arrow.png" alt=""></div>
-                </div> -->
-        </nav>
-        
-    </header>
-    <!-- Section -->
-    <section class="auction-content"></section>
-
-    <!-- Footer -->
-    <footer class="footer"></footer>
-
-
-<!-- SCRIPTS -->
-    <script src="./src/js/menu_button.js"></script>
-    <script src="./src/js/menu_drop.js"></script>
-    <script src="./src/js/filter.js"></script>
-    <script src="./src/js/slider.js"></script>
-</body>
-</html>
-=======
 
  <body lang="en">
 
@@ -201,7 +127,7 @@
 
 
          <!-- Content auction -->
-         <section class="content">
+         <section class="content" id="content">
              <div class="content__container">
                  <h2 class="content__title">AUTO LOTS</h2>
                  <div class="content__filter">
@@ -218,8 +144,8 @@
 
                  <div class="content__store">
                      <!-- ITEM -->
-                     <a href="" class="content__item native">
-                         <div class="content__img"><img src="src/img/nat2.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="0" class="content__item native">
+                         <div class="content__img"><img src="src/img/nat2.jpg" alt="" class="img-features" data-img="1"></div>
                          <div class="content__description name">
                              <p class="">ВАЗ 2107</p>
                          </div>
@@ -228,8 +154,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item native">
-                         <div class="content__img"><img src="src/img/nat1.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="1"  class="content__item native">
+                         <div class="content__img"><img src="src/img/nat1.jpg" alt="" class="img-features " data-img="2"></div>
                          <div class="content__description name">
                              <p class="">ВАЗ 2106</p>
                          </div>
@@ -238,8 +164,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item foreign">
-                         <div class="content__img"><img src="src/img/for1.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="2" class="content__item foreign">
+                         <div class="content__img"><img src="src/img/for1.jpg" alt="" class="img-features" data-img="3"></div>
                          <div class="content__description name">
                              <p class="">Chevrolet Camaro</p>
                          </div>
@@ -248,8 +174,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item foreign">
-                         <div class="content__img"><img src="src/img/for2.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="3" class="content__item foreign">
+                         <div class="content__img"><img src="src/img/for2.jpg" alt="" class="img-features" data-img="4"></div>
                          <div class="content__description name">
                              <p class="">Toyota Land Cruser</p>
                          </div>
@@ -258,8 +184,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item almostNew">
-                         <div class="content__img"><img src="src/img/almostNew1.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="4" class="content__item almostNew">
+                         <div class="content__img"><img src="src/img/almostNew1.jpg" alt="" class="img-features" data-img="5"></div>
                          <div class="content__description name">
                              <p class="">Toyota Rav4</p>
                          </div>
@@ -268,8 +194,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item almostNew">
-                         <div class="content__img"><img src="src/img/almostNew2.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="5" class="content__item almostNew">
+                         <div class="content__img"><img src="src/img/almostNew2.jpg" alt="" class="img-features" data-img="6"></div>
                          <div class="content__description name">
                              <p class="">Subaru Forester</p>
                          </div>
@@ -278,8 +204,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item crashed">
-                         <div class="content__img"><img src="src/img/crash1.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="6" class="content__item crashed">
+                         <div class="content__img"><img src="src/img/crash1.jpg" alt="" class="img-features" data-img="7"></div>
                          <div class="content__description name">
                              <p class="">ВАЗ 2101</p>
                          </div>
@@ -288,8 +214,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item crashed">
-                         <div class="content__img"><img src="src/img/crash2.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="7" class="content__item crashed">
+                         <div class="content__img"><img src="src/img/crash2.jpg" alt="" class="img-features" data-img="8"></div>
                          <div class="content__description name">
                              <p class="">Toyota Camry</p>
                          </div>
@@ -298,8 +224,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item euro">
-                         <div class="content__img"><img src="src/img/eur1.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="8" class="content__item euro">
+                         <div class="content__img"><img src="src/img/eur1.jpg" alt="" class="img-features" data-img="9"></div>
                          <div class="content__description name">
                              <p class="">Range Rover</p>
                          </div>
@@ -308,8 +234,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item euro">
-                         <div class="content__img"><img src="src/img/eur2.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="9" class="content__item euro">
+                         <div class="content__img"><img src="src/img/eur2.jpg" alt="" class="img-features" data-img="10"></div>
                          <div class="content__description name">
                              <p class="">Mercrdes S500</p>
                          </div>
@@ -317,8 +243,8 @@
                              <p class="">5 500$</p>
                          </div>
                      </a>
-                     <a href="" class="content__item retro">
-                         <div class="content__img"><img src="src/img/ret1.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="10" class="content__item retro">
+                         <div class="content__img"><img src="src/img/ret1.jpg" alt="" class="img-features" data-img="11"></div>
                          <div class="content__description name">
                              <p class="">Победа</p>
                          </div>
@@ -327,8 +253,8 @@
                          </div>
                      </a>
 
-                     <a href="" class="content__item retro">
-                         <div class="content__img"><img src="src/img/ret2.jpg" alt="" class="img-features"></div>
+                     <a href="#content" data-link="11" class="content__item retro">
+                         <div class="content__img"><img src="src/img/ret2.jpg" alt="" class="img-features" data-img="12"></div>
                          <div class="content__description name">
                              <p class="">ЗАЗ 965 (camelCase)</p>
                          </div>
@@ -351,6 +277,14 @@
 
                  </div>
              </div>
+
+             <div class="modal__content hide">
+                <div class="modal__cross content__cross "><i class="fas fa-times"></i></div>
+                <div class="modal__window modal__car">
+        
+
+             </div>
+             </div>
          </section>
 
          <!-- Footer -->
@@ -368,7 +302,8 @@
          <script src="./src/js/slider.js"></script>
          <script src="./src/js/filter.js"></script>
          <script src="./src/js/logIn.js"></script>
+         <script src="./src/js/content_card.js"></script>
+
      </body>
 
  </body>
->>>>>>> registration

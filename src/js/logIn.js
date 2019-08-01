@@ -37,20 +37,20 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); //stop the form submiting
     });
 
-    // // compare every arr(persons data) objects with input object, return true if even 1 match up
-    //     if (arr.some(isEqual) == true){
-    //         alert("welcome.");
-    //         // create user1 and put it in LocalStorage
-    //         let store = [];
-    //         store.push(user1);
-    //         localStorage.setItem('user', JSON.stringify(store));
-    //         // remove class hide button
-    //         document.getElementsByClassName('menu__item')[0].classList.remove('hide');
-    //     }else{
-    //         alert("you are not registrated or did not enter email or password coretly");
-    //     }
+    // compare every arr(persons data) objects with input object, return true if even 1 match up
+        if (arr.some(isEqual) == true){
+            alert("welcome.");
+            // create user1 and put it in LocalStorage
+            let store = [];
+            store.push(user1);
+            localStorage.setItem('user', JSON.stringify(store));
+            // remove class hide button
+            document.getElementsByClassName('menu__item')[0].classList.remove('hide');
+        }else{
+            alert("you are not registrated or did not enter email or password coretly");
+        }
 
-    //     function isEqual(x){
-    //         return JSON.stringify(x) === JSON.stringify(user1);
-    //     }
+        function isEqual(x){
+            return JSON.stringify(x) === JSON.stringify(user1);
+        }
 }); // end
