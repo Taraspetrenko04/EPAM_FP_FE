@@ -171,7 +171,7 @@
          }
      }
      .modal__content{
-         top: 0;
+        top: 0;
         position: fixed;
          background-color: rgba(0, 0, 0, 0.4);
          width: 100%;
@@ -183,6 +183,49 @@
             background-repeat: no-repeat;
             background-size: cover;
          }
+
+         .location__model{
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: 100%;
+            z-index: 2000;
+         }
+            .location__map{
+                position: relative;
+                height: 200px;
+                margin: 0 auto;
+                width: 80%;
+                padding: 5%;
+                border: 5px solid #ffff;
+                top: 82px;
+
+            }
+            .location__frame{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:relative;
+            }
+            .location__map iframe{
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+            .location__cross{
+            position: absolute;
+             width: fit-content;
+             font-size: 1.5em;
+             color: rgb(248, 66, 111);
+             left: 95%;
+             cursor: pointer;
+             top: -60px;
+             padding: 5px;
+             border: none;
+            }
      
      
 

@@ -26,13 +26,13 @@ cardStore.addEventListener('click', function(event){
     while( target.className != this.className){//if  we click on cardStore div
     // console.log(this.className);
         if(target.tagName == 'A'){ //if we get tag a mean card class content__item
-            console.log("catch!");
+            // console.log("catch!");
             // get link's data-info value and set it to card Array  
             let d = +target.dataset.link;
-            console.log(imgArr[d]);
+            // console.log(imgArr[d]);
             // get img src atribute
             let src1 = imgArr[d].getAttribute('src');
-            console.log(src1);
+            // console.log(src1);
             // remove class hide
             document.getElementsByClassName('modal__content')[0].classList.remove('hide');
             //  document.getElementsByClassName('modal__content')[0].style.backgroundImage = "url(" + src1 + ")";
@@ -40,29 +40,8 @@ cardStore.addEventListener('click', function(event){
 
             // add style atribut with current src path
             document.getElementsByClassName('modal__car')[0].style.backgroundImage = "url(" + src1 + ")";
-            // create modal window
-            // let div = document.createElement('div');
-            // // set the class name
-            // div.className = "store_cars";
-            // // div.style.backgroundImage
-            // // insert modal window
-            // document.body.appendChild(div);
-        
-
-            // let img = document.getElementsByClassName('img-features');
-            // console.log(img);
-            // createCard(img);
-            // console.log(document.getElementsByClassName('img-features'));
             return;
         }
    target = target.parentNode;
     }
-
- 
-    // if (target.className == 'content__item'){
-    //     console.log('tack');
-    // }else{
-    //     console.log('nit');
-    // }
-    
 })

@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // compare every arr(persons data) objects with input object, return true if even 1 match up
         if (arr.some(isEqual) == true){
-            alert("welcome.");
+            // alert("welcome.");
             // create user1 and put it in LocalStorage
             let store = [];
             store.push(user1);
